@@ -9,7 +9,13 @@ import SwiftUI
 
 struct MenuPrincipalView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        //Text("aqui é a tela de menu principal")
+        VStack {
+            BotaoPrincipalComponenteView(texto: "notas", corTexto: Color.white)
+            
+            BotaoPrincipalComponenteView(texto: "dias", corTexto: Color.white)
+        }
+        
     }
 }
 
