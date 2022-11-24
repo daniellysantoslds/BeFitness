@@ -1,5 +1,5 @@
 //
-//  MenuPrincipal.swift
+//  MenuPrincipalView.swift
 //  motiva Watch App
 //
 //  Created by Danielly Santos Lopes da Silva on 24/11/22.
@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct MenuPrincipal: View {
+struct MenuPrincipalView: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
-struct MenuPrincipal_Previews: PreviewProvider {
+struct MenuPrincipalView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuPrincipal()
+        MenuPrincipalView()
     }
 }
