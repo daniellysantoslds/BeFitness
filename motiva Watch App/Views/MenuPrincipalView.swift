@@ -17,18 +17,22 @@ struct MenuPrincipalView: View {
                     Text("notas")
                     
                 }
-                
+                NavigationLink (destination: ContentView()){
+                    
+                    Text("dias")
+                    
+                }
             }
             
-            NavigationLink (destination: MenuPrincipalView()){
-                
-                Text("dias")
-                
-            }
             
-        }
+        }.onAppear(perform: noMoreOnboarding)
         
     }
+    
+    func noMoreOnboarding () {
+        UserDefaults.standard.set(true, forKey: "OnboardingViewed")
+    }
+    
 }
 
 struct MenuPrincipalView_Previews: PreviewProvider {
