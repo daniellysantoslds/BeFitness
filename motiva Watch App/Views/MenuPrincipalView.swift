@@ -10,10 +10,22 @@ import SwiftUI
 struct MenuPrincipalView: View {
     var body: some View {
         //Text("aqui é a tela de menu principal")
-        VStack {
-            BotaoPrincipalComponenteView(texto: "notas", corTexto: Color.white)
+        NavigationView {
+            VStack {
+                NavigationLink (destination: ContentView()){
+                    
+                    Text("notas")
+                    
+                }
+                
+            }
             
-            BotaoPrincipalComponenteView(texto: "dias", corTexto: Color.white)
+            NavigationLink (destination: MenuPrincipalView()){
+                
+                Text("dias")
+                
+            }
+            
         }
         
     }
