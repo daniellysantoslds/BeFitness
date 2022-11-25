@@ -15,6 +15,8 @@
 		93F7A713292E462200789EA9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93F7A712292E462200789EA9 /* Preview Assets.xcassets */; };
 		93F7A742292FA3F900789EA9 /* BotaoPrincipalComponenteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F7A741292FA3F900789EA9 /* BotaoPrincipalComponenteView.swift */; };
 		93F7A747292FA65C00789EA9 /* MenuPrincipalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F7A746292FA65C00789EA9 /* MenuPrincipalView.swift */; };
+		93F7A7492930E3D600789EA9 /* ListaVersiculosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F7A7482930E3D600789EA9 /* ListaVersiculosView.swift */; };
+		93F7A74C2930EAC800789EA9 /* VersiculoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F7A74B2930EAC800789EA9 /* VersiculoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		93F7A712292E462200789EA9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		93F7A741292FA3F900789EA9 /* BotaoPrincipalComponenteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotaoPrincipalComponenteView.swift; sourceTree = "<group>"; };
 		93F7A746292FA65C00789EA9 /* MenuPrincipalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPrincipalView.swift; sourceTree = "<group>"; };
+		93F7A7482930E3D600789EA9 /* ListaVersiculosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaVersiculosView.swift; sourceTree = "<group>"; };
+		93F7A74B2930EAC800789EA9 /* VersiculoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersiculoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 		93F7A70A292E462200789EA9 /* motiva Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				93F7A74A2930EAAE00789EA9 /* Modelos */,
 				93F7A73E292FA27C00789EA9 /* Componentes */,
 				93F7A745292FA5DD00789EA9 /* Views */,
 				93F7A70B292E462200789EA9 /* motivaApp.swift */,
@@ -115,8 +120,17 @@
 			children = (
 				64BAF23E292FB21100775595 /* OnboardingView.swift */,
 				93F7A746292FA65C00789EA9 /* MenuPrincipalView.swift */,
+				93F7A7482930E3D600789EA9 /* ListaVersiculosView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		93F7A74A2930EAAE00789EA9 /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				93F7A74B2930EAC800789EA9 /* VersiculoModel.swift */,
+			);
+			path = Modelos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,7 +234,9 @@
 				93F7A747292FA65C00789EA9 /* MenuPrincipalView.swift in Sources */,
 				93F7A70E292E462200789EA9 /* ContentView.swift in Sources */,
 				93F7A70C292E462200789EA9 /* motivaApp.swift in Sources */,
+				93F7A74C2930EAC800789EA9 /* VersiculoModel.swift in Sources */,
 				64BAF23F292FB21100775595 /* OnboardingView.swift in Sources */,
+				93F7A7492930E3D600789EA9 /* ListaVersiculosView.swift in Sources */,
 				93F7A742292FA3F900789EA9 /* BotaoPrincipalComponenteView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
