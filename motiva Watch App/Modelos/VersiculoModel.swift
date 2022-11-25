@@ -7,31 +7,25 @@
 
 import SwiftUI
 
-class ListaVersiculosModel: ObservableObject {
-    @Published var versiculos: [Versiculo] = []
+class VersiculoModel: Hashable {
+    let id: UUID
+    let titulo: String
+    let descricao: String
     
-    init() {
-        versiculos = makeVersiculos()
+    init(titulo: String, descricao: String) {
+        self.id = UUID()
+        self.titulo = titulo
+        self.descricao = descricao
     }
     
-    private func makeVersiculos() -> [Versiculo] {
-        return [ Versiculo(id: 0, title: "acorda"),
-                 Versiculo(id: 1, title: "se motiva"),
-                 Versiculo(id: 2, title: "relaxa"),
-                 Versiculo(id: 3, title: "vai treinar")
-                 
-        ]
+    static func == (lhs:VersiculoModel, rhs: VersiculoModel) -> Bool {
+        return lhs.id == rhs.id
+        
     }
-}
-
-class Versiculo: ObservableObject, Identifiable {
-    @Published var id: Int
-    @Published var title: String
     
-    init(id: Int,
-         title: String)
-    {
-        self.id = id
-        self.title = title
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+        hasher.combine(titulo)
+        hasher.combine(descricao)
     }
 }

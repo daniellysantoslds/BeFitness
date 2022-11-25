@@ -1,5 +1,5 @@
 //
-//  ListaVersiculos.swift
+//  VersiculoView.swift
 //  motiva Watch App
 //
 //  Created by Danielly Santos Lopes da Silva on 25/11/22.
@@ -7,63 +7,23 @@
 
 import SwiftUI
 
-struct ListaVersiculosView: View {
-    
-    @ObservedObject var listaVersiculosModel: ListaVersiculosModel = .init()
-    
-    @State var isItemViewPresenting: Bool = false
-    
+struct VersiculoView: View {
     var body: some View {
-        ZStack {
-            VStack(spacing: 20){
-                ScrollView(.vertical, showsIndicators: false) {
-                    VStack(alignment: .leading, spacing: 20) {
-                        ForEach(listaVersiculosModel.versiculos) { versiculo in
-                            
-                            NavigationLink(destination: ContentView()){
-                                VersiculoView(title: versiculo.title)
-                                
-                            }
-                            
-                        }
-                        .navigationTitle("")
-                        .foregroundColor(.black)
-                        .multilineTextAlignment(.leading)
-                    } .padding(.vertical)
-                    
-                    //            }.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 0,65, alignment: .center)
-                }
-                
-                
-                
-                
-            }
-        }
-        
-    }
-    
-    struct VersiculoView: View {
-        
-        var title: String
-        
-        var body: some View {
-            ZStack {
-                VStack() {
-                    Text(title).foregroundColor(Color.white)
-                        .bold()
-                        .multilineTextAlignment(.leading)
-                                        }//.frame(width:30, height: 10)
-                    
-                }
-                
-            }
+        ScrollView {
             
-        }
-        
-        struct ListaVersiculos_Previews: PreviewProvider {
-            static var previews: some View {
-                ListaVersiculosView()
+            VStack(alignment: .leading, spacing: 20) {
+                
+                Text("Endorfina").bold()
+                Text("A endorfina é boa para o corpo pois deixa voce mais feliz e satisfeito e seguro para suas atividades e pararaparaparaparapara, rumo ao hexa! ** lalallalalallalallalaal testandoooo a scroooooolviewwwwwwwww uhuuuul")
             }
         }
+        
+        
     }
-    
+}
+
+struct VersiculoView_Previews: PreviewProvider {
+    static var previews: some View {
+        VersiculoView()
+    }
+}

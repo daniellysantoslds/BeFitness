@@ -15,8 +15,12 @@
 		93F7A713292E462200789EA9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93F7A712292E462200789EA9 /* Preview Assets.xcassets */; };
 		93F7A742292FA3F900789EA9 /* BotaoPrincipalComponenteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F7A741292FA3F900789EA9 /* BotaoPrincipalComponenteView.swift */; };
 		93F7A747292FA65C00789EA9 /* MenuPrincipalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F7A746292FA65C00789EA9 /* MenuPrincipalView.swift */; };
-		93F7A7492930E3D600789EA9 /* ListaVersiculosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F7A7482930E3D600789EA9 /* ListaVersiculosView.swift */; };
-		93F7A74C2930EAC800789EA9 /* VersiculoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F7A74B2930EAC800789EA9 /* VersiculoModel.swift */; };
+		93F7A7492930E3D600789EA9 /* ScrollVersiculosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F7A7482930E3D600789EA9 /* ScrollVersiculosView.swift */; };
+		93F7A74C2930EAC800789EA9 /* ScrollVersiculoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F7A74B2930EAC800789EA9 /* ScrollVersiculoModel.swift */; };
+		93F7A7522931071700789EA9 /* ListaVersiculosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F7A7512931071700789EA9 /* ListaVersiculosView.swift */; };
+		93F7A7542931231F00789EA9 /* ListaVersiculoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F7A7532931231F00789EA9 /* ListaVersiculoModel.swift */; };
+		93F7A7562931239500789EA9 /* VersiculoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F7A7552931239500789EA9 /* VersiculoModel.swift */; };
+		93F7A7582931260F00789EA9 /* VersiculoItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F7A7572931260F00789EA9 /* VersiculoItemModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +57,12 @@
 		93F7A712292E462200789EA9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		93F7A741292FA3F900789EA9 /* BotaoPrincipalComponenteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotaoPrincipalComponenteView.swift; sourceTree = "<group>"; };
 		93F7A746292FA65C00789EA9 /* MenuPrincipalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPrincipalView.swift; sourceTree = "<group>"; };
-		93F7A7482930E3D600789EA9 /* ListaVersiculosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaVersiculosView.swift; sourceTree = "<group>"; };
-		93F7A74B2930EAC800789EA9 /* VersiculoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersiculoModel.swift; sourceTree = "<group>"; };
+		93F7A7482930E3D600789EA9 /* ScrollVersiculosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollVersiculosView.swift; sourceTree = "<group>"; };
+		93F7A74B2930EAC800789EA9 /* ScrollVersiculoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollVersiculoModel.swift; sourceTree = "<group>"; };
+		93F7A7512931071700789EA9 /* ListaVersiculosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaVersiculosView.swift; sourceTree = "<group>"; };
+		93F7A7532931231F00789EA9 /* ListaVersiculoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaVersiculoModel.swift; sourceTree = "<group>"; };
+		93F7A7552931239500789EA9 /* VersiculoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersiculoModel.swift; sourceTree = "<group>"; };
+		93F7A7572931260F00789EA9 /* VersiculoItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersiculoItemModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +128,8 @@
 			children = (
 				64BAF23E292FB21100775595 /* OnboardingView.swift */,
 				93F7A746292FA65C00789EA9 /* MenuPrincipalView.swift */,
-				93F7A7482930E3D600789EA9 /* ListaVersiculosView.swift */,
+				93F7A7482930E3D600789EA9 /* ScrollVersiculosView.swift */,
+				93F7A7512931071700789EA9 /* ListaVersiculosView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -128,7 +137,10 @@
 		93F7A74A2930EAAE00789EA9 /* Modelos */ = {
 			isa = PBXGroup;
 			children = (
-				93F7A74B2930EAC800789EA9 /* VersiculoModel.swift */,
+				93F7A74B2930EAC800789EA9 /* ScrollVersiculoModel.swift */,
+				93F7A7532931231F00789EA9 /* ListaVersiculoModel.swift */,
+				93F7A7552931239500789EA9 /* VersiculoModel.swift */,
+				93F7A7572931260F00789EA9 /* VersiculoItemModel.swift */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";
@@ -232,11 +244,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				93F7A747292FA65C00789EA9 /* MenuPrincipalView.swift in Sources */,
+				93F7A7522931071700789EA9 /* ListaVersiculosView.swift in Sources */,
+				93F7A7542931231F00789EA9 /* ListaVersiculoModel.swift in Sources */,
 				93F7A70E292E462200789EA9 /* ContentView.swift in Sources */,
+				93F7A7562931239500789EA9 /* VersiculoModel.swift in Sources */,
 				93F7A70C292E462200789EA9 /* motivaApp.swift in Sources */,
-				93F7A74C2930EAC800789EA9 /* VersiculoModel.swift in Sources */,
+				93F7A74C2930EAC800789EA9 /* ScrollVersiculoModel.swift in Sources */,
 				64BAF23F292FB21100775595 /* OnboardingView.swift in Sources */,
-				93F7A7492930E3D600789EA9 /* ListaVersiculosView.swift in Sources */,
+				93F7A7492930E3D600789EA9 /* ScrollVersiculosView.swift in Sources */,
+				93F7A7582931260F00789EA9 /* VersiculoItemModel.swift in Sources */,
 				93F7A742292FA3F900789EA9 /* BotaoPrincipalComponenteView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
