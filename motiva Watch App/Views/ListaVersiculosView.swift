@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ListaVersiculosView: View {
     var body: some View {
-        NavigationView {
+        
             List(versiculos) { versiculo in
                 NavigationLink(destination:
                                 DetalhesVersiculoView(versiculo: versiculo)) {
@@ -20,7 +20,7 @@ struct ListaVersiculosView: View {
                 
             }
             
-        }
+        
         
     }
 }
