@@ -10,13 +10,18 @@ import SwiftUI
 struct ListaVersiculosView: View {
     var body: some View {
         NavigationView {
-            NavigationLink(destination: DetalhesVersiculoView())
             List(versiculos) { versiculo in
-                Text("\(versiculo.tituloLista)")
+                NavigationLink(destination:
+                                DetalhesVersiculoView(versiculo: versiculo)) {
+                    VStack {
+                        Text("\(versiculo.tituloLista)")
+                    }
+                }
+                
             }
-
+            
         }
-               
+        
     }
 }
 

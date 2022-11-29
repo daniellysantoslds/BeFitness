@@ -8,15 +8,17 @@
 import SwiftUI
 
 struct DetalhesVersiculoView: View {
+    
+    var versiculo: ListItem = versiculos[0]
+    
     var body: some View {
-        ScrollView {
+        
+        VStack(alignment: .leading, spacing: 0) {
             
-            VStack(alignment: .leading, spacing: 20) {
-                
-                Text("Endorfina").bold()
-                Text("A endorfina é boa para o corpo pois deixa voce mais feliz e satisfeito e seguro para suas atividades e pararaparaparaparapara, rumo ao hexa! ** lalallalalallalallalaal testandoooo a scroooooolviewwwwwwwww uhuuuul")
-            }
+            Text(versiculo.tituloVersiculo).bold()
+            Text(versiculo.descricaoVersiculo)
         }
+        
         
         
     }
@@ -24,6 +26,6 @@ struct DetalhesVersiculoView: View {
 
 struct DetalhesVersiculoView_Previews: PreviewProvider {
     static var previews: some View {
-        DetalhesVersiculoView()
+        DetalhesVersiculoView(versiculo: versiculos[0])
     }
 }
