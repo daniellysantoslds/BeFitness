@@ -12,7 +12,7 @@ struct MenuPrincipalView: View {
         //Text("aqui é a tela de menu principal")
         NavigationView {
             VStack {
-                NavigationLink (destination: ContentView()){
+                NavigationLink (destination: ListaVersiculosView()){
                     
                     Text("notas")
                     
