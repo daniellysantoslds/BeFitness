@@ -1,29 +1,64 @@
 //
-//  VersiculoView.swift
+//  ListaVersiculosView.swift
 //  motiva Watch App
 //
-//  Created by Danielly Santos Lopes da Silva on 25/11/22.
+//  Created by Danielly Santos Lopes da Silva on 28/11/22.
 //
 
 import SwiftUI
 
-struct VersiculoView: View {
+struct ListaVersiculosView: View {
     var body: some View {
-        ScrollView {
-            
-            VStack(alignment: .leading, spacing: 20) {
-                
-                Text("Endorfina").bold()
-                Text("A endorfina é boa para o corpo pois deixa voce mais feliz e satisfeito e seguro para suas atividades e pararaparaparaparapara, rumo ao hexa! ** lalallalalallalallalaal testandoooo a scroooooolviewwwwwwwww uhuuuul")
-            }
+        List(versiculos) { versiculo in
+            Text("\(versiculo.tituloLista)")
         }
-        
-        
+       
     }
 }
 
-struct VersiculoView_Previews: PreviewProvider {
+struct ListaVersiculosView_Previews: PreviewProvider {
     static var previews: some View {
-        VersiculoView()
+        ListaVersiculosView()
     }
 }
+
+struct ListItem: Identifiable {
+    var id = UUID()
+    var tituloLista: String
+    var tituloVersiculo: String
+    var descricaoVersiculo: String
+}
+
+var versiculos = [
+    ListItem(tituloLista: "Endorfina1",
+             tituloVersiculo: "Chapadinha",
+             descricaoVersiculo: "Aqui voce vai ficar chapadaaa de exercicios"),
+    
+    ListItem(tituloLista: "Chapadinha",
+             tituloVersiculo: "Endorfina",
+             descricaoVersiculo: "Aqui voce vai ficar chapadaaa de exercicios"),
+    
+    ListItem(tituloLista: "cansada",
+             tituloVersiculo: "Chapadinha1",
+             descricaoVersiculo: "Aqui voce vai ficar chapadaaa de exercicios"),
+    
+    ListItem(tituloLista: "animada",
+             tituloVersiculo: "endorfina2",
+             descricaoVersiculo: "Aqui voce vai ficar chapadaaa de exercicios"),
+    ListItem(tituloLista: "Endorfina1",
+             tituloVersiculo: "Chapadinha",
+             descricaoVersiculo: "Aqui voce vai ficar chapadaaa de exercicios"),
+    
+    ListItem(tituloLista: "Chapadinha",
+             tituloVersiculo: "Endorfina",
+             descricaoVersiculo: "Aqui voce vai ficar chapadaaa de exercicios"),
+    
+    ListItem(tituloLista: "cansada",
+             tituloVersiculo: "Chapadinha1",
+             descricaoVersiculo: "Aqui voce vai ficar chapadaaa de exercicios"),
+    
+    ListItem(tituloLista: "animada",
+             tituloVersiculo: "endorfina2",
+             descricaoVersiculo: "Aqui voce vai ficar chapadaaa de exercicios"),
+    
+]
