@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		64BAF23F292FB21100775595 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BAF23E292FB21100775595 /* OnboardingView.swift */; };
 		9305AC322936DBA700A1647F /* HumorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9305AC312936DBA700A1647F /* HumorView.swift */; };
+		930F3EF82938E79200DF4158 /* CheckList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930F3EF72938E79200DF4158 /* CheckList.swift */; };
 		93C4D36029359CDD00268B94 /* ListaVersiculosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C4D35F29359CDD00268B94 /* ListaVersiculosView.swift */; };
 		93F7A707292E462200789EA9 /* motiva Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 93F7A706292E462200789EA9 /* motiva Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		93F7A70C292E462200789EA9 /* motivaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F7A70B292E462200789EA9 /* motivaApp.swift */; };
@@ -47,6 +48,7 @@
 /* Begin PBXFileReference section */
 		64BAF23E292FB21100775595 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		9305AC312936DBA700A1647F /* HumorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HumorView.swift; sourceTree = "<group>"; };
+		930F3EF72938E79200DF4158 /* CheckList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckList.swift; sourceTree = "<group>"; };
 		93C4D35F29359CDD00268B94 /* ListaVersiculosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaVersiculosView.swift; sourceTree = "<group>"; };
 		93F7A700292E462200789EA9 /* motiva.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = motiva.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F7A706292E462200789EA9 /* motiva Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "motiva Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +127,7 @@
 				93F7A746292FA65C00789EA9 /* MenuPrincipalView.swift */,
 				93F7A7512931071700789EA9 /* DetalhesVersiculosView.swift */,
 				93C4D35F29359CDD00268B94 /* ListaVersiculosView.swift */,
+				930F3EF72938E79200DF4158 /* CheckList.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93F7A747292FA65C00789EA9 /* MenuPrincipalView.swift in Sources */,
+				930F3EF82938E79200DF4158 /* CheckList.swift in Sources */,
 				93F7A7522931071700789EA9 /* DetalhesVersiculosView.swift in Sources */,
 				93F7A70E292E462200789EA9 /* ContentView.swift in Sources */,
 				93F7A70C292E462200789EA9 /* motivaApp.swift in Sources */,
