@@ -14,7 +14,7 @@ struct ListaVersiculosView: View {
                 NavigationLink(destination:
                                 DetalhesVersiculoView(versiculo: versiculo)) {
                     VStack {
-                        Text("\(versiculo.tituloLista)")
+                        Text("\(versiculo.tituloVersiculo)")
                     }
                 }
                 
@@ -33,41 +33,27 @@ struct ListaVersiculosView_Previews: PreviewProvider {
 
 struct ListItem: Identifiable {
     var id = UUID()
-    var tituloLista: String
     var tituloVersiculo: String
     var descricaoVersiculo: String
+    var turno : String
 }
 
 var versiculos = [
-    ListItem(tituloLista: "Endorfina1",
-             tituloVersiculo: "Chapadinha",
-             descricaoVersiculo: "Aqui voce vai ficar chapadaaa de exercicios"),
+    ListItem(tituloVersiculo: "Chapadinha",
+             descricaoVersiculo: "Aqui voce vai ficar chapadaaa de exercicios", turno: "Manhã"),
     
-    ListItem(tituloLista: "Chapadinha",
-             tituloVersiculo: "Endorfina",
-             descricaoVersiculo: "Aqui voce vai ficar chapadaaa de exercicios"),
+    ListItem(tituloVersiculo: "Endorfina",
+             descricaoVersiculo: "Aqui voce vai ficar chapadaaa de exercicios", turno: "Tarde"),
     
-    ListItem(tituloLista: "cansada",
-             tituloVersiculo: "Chapadinha1",
-             descricaoVersiculo: "Aqui voce vai ficar chapadaaa de exercicios"),
+    ListItem(tituloVersiculo: "Chapadinha1",
+             descricaoVersiculo: "Aqui voce vai ficar chapadaaa de exercicios", turno: "Noite"),
     
-    ListItem(tituloLista: "animada",
-             tituloVersiculo: "endorfina2",
-             descricaoVersiculo: "Aqui voce vai ficar chapadaaa de exercicios"),
-    ListItem(tituloLista: "Endorfina1",
-             tituloVersiculo: "Chapadinha",
-             descricaoVersiculo: "Aqui voce vai ficar chapadaaa de exercicios"),
+    ListItem(tituloVersiculo: "endorfina2",
+             descricaoVersiculo: "Aqui voce vai ficar chapadaaa de exercicios", turno: "Manhã"),
+    ListItem(tituloVersiculo: "Chapadinha",
+             descricaoVersiculo: "Aqui voce vai ficar chapadaaa de exercicios", turno: "Tarde"),
     
-    ListItem(tituloLista: "Chapadinha",
-             tituloVersiculo: "Endorfina",
-             descricaoVersiculo: "Aqui voce vai ficar chapadaaa de exercicios"),
-    
-    ListItem(tituloLista: "cansada",
-             tituloVersiculo: "Chapadinha1",
-             descricaoVersiculo: "Aqui voce vai ficar chapadaaa de exercicios"),
-    
-    ListItem(tituloLista: "animada",
-             tituloVersiculo: "endorfina2",
-             descricaoVersiculo: "Aqui voce vai ficar chapadaaa de exercicios"),
+    ListItem(tituloVersiculo: "Endorfina",
+             descricaoVersiculo: "Aqui voce vai ficar chapadaaa de exercicios", turno: "Noite"),
     
 ]
