@@ -12,12 +12,37 @@ struct DetalhesVersiculoView: View {
     var versiculo: ListItem = versiculos[0]
     
     var body: some View {
-        
-        VStack(alignment: .leading, spacing: 0) {
+         
+        VStack(spacing: 8) {
             
-            Text(versiculo.tituloVersiculo).bold()
-            Text(versiculo.descricaoVersiculo)
-        }
+            VStack( spacing: 0) {
+                Spacer()
+                    .frame(height: 10)
+                HStack {
+                    Spacer()
+                        .frame(width: 10)
+                    Text(versiculo.tituloVersiculo)
+                        .foregroundColor(Color.black)
+                        .bold()
+                        .font(.system(size: 20))
+                       
+                    Spacer()
+                }
+     
+            }.frame(width: WKInterfaceDevice.current().screenBounds.width)
+                .background(Color("corfeliz"))
+          
+            ScrollView {
+                    Text(versiculo.descricaoVersiculo)
+                    Spacer()
+
+                
+            }
+            
+            
+           
+        }//.frame(height: UIScreen.main.bounds.height )
+        
         
         
         
