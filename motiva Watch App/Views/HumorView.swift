@@ -19,7 +19,7 @@ struct HumorView: View {
         NavigationView {
             VStack(spacing: 10){
                 VStack {
-                    Text("Como esta se sentindo?")
+                    Text("Como esta se sentindo????")
                     
                 }
                 
