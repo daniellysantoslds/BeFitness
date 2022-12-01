@@ -11,11 +11,12 @@ import SwiftUI
 struct motiva_Watch_AppApp: App {
     var body: some Scene {
         WindowGroup {
-            if UserDefaults.standard.bool(forKey: "OnboardingViewed") {
-                MenuPrincipalView()
-            } else {
-                OnboardingView()
-            }
+//            if UserDefaults.standard.bool(forKey: "OnboardingViewed") {
+//                MenuPrincipalView()
+//            } else {
+//                OnboardingView()
+//            }
+            HumorView()
         }
     }
 }

@@ -11,35 +11,34 @@ struct HumorView: View {
     
     
     
-    var iconeUm: Int
+    //var iconeUm: Int
     
     
     
     var body: some View {
         NavigationView {
-            VStack(spacing: 10){
+            VStack(spacing: 20){
                 VStack {
                     Text("Como esta se sentindo?")
                     
                 }
                 
-                HStack(spacing: 20) {
+                HStack(spacing: 12) {
                     
                     
                     NavigationLink (destination: MenuPrincipalView()) {
-                        Image(systemName: "heart")
-                    }.frame(width: 50, height: 50)
-                        .cornerRadius(16)
+                        Image("imagemfeliz")
+                    }.frame(width: 55, height: 55)
+                        .simultaneousGesture(TapGesture().onEnded({print("deu bom")}))
                     
                     
                     NavigationLink (destination: MenuPrincipalView()) {
-                        Image(systemName: "heart")
-                    }.frame(width: 50, height: 50)
-                        .cornerRadius(16)
+                        Image("imagemnormal")
+                    }.frame(width: 55, height: 55)
                     
                     NavigationLink (destination: MenuPrincipalView()) {
-                        Image(systemName: "heart")
-                    }.frame(width: 50, height: 50)
+                        Image("imagemtriste")
+                    }.frame(width: 55, height: 55)
                         .cornerRadius(16)
                     
                     
@@ -58,7 +57,7 @@ struct HumorView: View {
 
 struct HumorView_Previews: PreviewProvider {
     static var previews: some View {
-        HumorView(iconeUm: 1)
+        HumorView()
     }
 }
 
