@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct HumorView: View {
+    
+    
+    
+    var iconeUm: Int
+    
+    
+    
     var body: some View {
         NavigationView {
             VStack(spacing: 10){
@@ -24,7 +31,7 @@ struct HumorView: View {
                     }.frame(width: 50, height: 50)
                         .cornerRadius(16)
                     
-                   
+                    
                     NavigationLink (destination: MenuPrincipalView()) {
                         Image(systemName: "heart")
                     }.frame(width: 50, height: 50)
@@ -51,7 +58,7 @@ struct HumorView: View {
 
 struct HumorView_Previews: PreviewProvider {
     static var previews: some View {
-        HumorView()
+        HumorView(iconeUm: 1)
     }
 }
 
