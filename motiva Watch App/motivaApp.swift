@@ -16,6 +16,7 @@ struct motiva_Watch_AppApp: App {
 //            } else {
 //                OnboardingView()
 //            }
+//            DetalhesVersiculoView()
             HumorView()
         }
     }
