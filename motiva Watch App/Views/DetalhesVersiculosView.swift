@@ -24,13 +24,13 @@ struct DetalhesVersiculoView: View {
                     Text(versiculo.tituloVersiculo)
                         .foregroundColor(Color.black)
                         .bold()
-                        .font(.system(size: 20))
+                        .font(.system(size: 18))
                        
                     Spacer()
                 }
      
             }.frame(width: WKInterfaceDevice.current().screenBounds.width)
-                .background(Color("corfeliz"))
+                .background(versiculo.corBackground)
           
             ScrollView {
                     Text(versiculo.descricaoVersiculo)
