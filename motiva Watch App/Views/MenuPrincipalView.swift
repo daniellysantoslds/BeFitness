@@ -15,12 +15,12 @@ struct MenuPrincipalView: View {
             VStack {
                 NavigationLink (destination: ListaVersiculosView()){
                     
-                    Text("notas")
+                    Text("Versiculos")
                     
                 }
                 NavigationLink (destination: ContentView()){
                     
-                    Text("dias")
+                    Text("Acompanhamento")
                     
                 }
             }

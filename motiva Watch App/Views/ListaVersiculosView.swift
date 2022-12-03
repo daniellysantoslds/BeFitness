@@ -19,10 +19,7 @@ struct ListaVersiculosView: View {
                     
                 }
                 
-                
-                
             } .listRowBackground(versiculo.corBackground.cornerRadius(8))
-            
             
             
         }
