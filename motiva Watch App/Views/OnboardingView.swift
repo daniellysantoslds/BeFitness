@@ -15,22 +15,30 @@ struct OnboardingView: View {
         NavigationView{
             ZStack {
                 VStack {
-                    Text("Holy Bible")
+                    //ext("Befitness").bold()
                     TabView {
                         VStack {
-                            Image(systemName: "star")
-                                .imageScale(.large)
-                            Text("Check-in")
+                            Image("icone")
+                                .resizable()
+                                .frame(width: 70, height: 70)
+                            Text("Befitness").bold()
+                          
                         }
                         VStack {
-                            Image(systemName: "heart")
+//                            Spacer(minLength: 10)
+                            Image("humoronboarding")
                                 .imageScale(.large)
-                            Text("Vai rolar versiculos")
+                                .frame(width: 70, height:70)
+                                
+                            Text("Nos conte sobre seu humor")
                         }
                         VStack {
-                            Image(systemName: "eye")
-                                .imageScale(.large)
-                            Text("Bata suas metas")
+                            Image("imagemnotificacao")
+                                //.resizable()
+                            //.imageScale(.small)
+                                .frame(width: 70, height:70)
+                            Text("Receba notificações motivacionais diariamnete")
+                                
                         }
                         VStack {
                             Text("Pronto! Vamos começar?")
