@@ -50,10 +50,10 @@ struct HumorView: View {
             
             
         }
-//        .onAppear(perform: {
-//            UserDefaults.standard.set(UserDefaults.standard.integer(forKey: "InitialDate") - 432000, forKey: "InitialDate")
-//        }
-//        )
+        .onAppear(perform: {
+            UserDefaults.standard.set(UserDefaults.standard.integer(forKey: "InitialDate") - 432000, forKey: "InitialDate")
+        }
+        )
     }
     
     func generateDaysData() {

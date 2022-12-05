@@ -14,6 +14,9 @@
 		9305AC322936DBA700A1647F /* HumorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9305AC312936DBA700A1647F /* HumorView.swift */; };
 		938507C72939302200968FA2 /* TESTE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938507C62939302200968FA2 /* TESTE.swift */; };
 		93C4D36029359CDD00268B94 /* ListaVersiculosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C4D35F29359CDD00268B94 /* ListaVersiculosView.swift */; };
+		93C5D31E293E369E0043A246 /* soltarde.png in Resources */ = {isa = PBXBuildFile; fileRef = 93C5D31D293E369E0043A246 /* soltarde.png */; };
+		93C5D320293E36CB0043A246 /* solmanha.png in Resources */ = {isa = PBXBuildFile; fileRef = 93C5D31F293E36CB0043A246 /* solmanha.png */; };
+		93C5D322293E36D80043A246 /* solnoite.png in Resources */ = {isa = PBXBuildFile; fileRef = 93C5D321293E36D80043A246 /* solnoite.png */; };
 		93F7A707292E462200789EA9 /* motiva Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 93F7A706292E462200789EA9 /* motiva Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		93F7A70C292E462200789EA9 /* motivaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F7A70B292E462200789EA9 /* motivaApp.swift */; };
 		93F7A70E292E462200789EA9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F7A70D292E462200789EA9 /* ContentView.swift */; };
@@ -57,6 +60,9 @@
 		9305AC312936DBA700A1647F /* HumorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HumorView.swift; sourceTree = "<group>"; };
 		938507C62939302200968FA2 /* TESTE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TESTE.swift; sourceTree = "<group>"; };
 		93C4D35F29359CDD00268B94 /* ListaVersiculosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaVersiculosView.swift; sourceTree = "<group>"; };
+		93C5D31D293E369E0043A246 /* soltarde.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = soltarde.png; path = Assets.xcassets/soltarde.imageset/soltarde.png; sourceTree = "<group>"; };
+		93C5D31F293E36CB0043A246 /* solmanha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = solmanha.png; path = Assets.xcassets/solmanha.imageset/solmanha.png; sourceTree = "<group>"; };
+		93C5D321293E36D80043A246 /* solnoite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = solnoite.png; path = Assets.xcassets/solnoite.imageset/solnoite.png; sourceTree = "<group>"; };
 		93F7A700292E462200789EA9 /* motiva.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = motiva.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F7A706292E462200789EA9 /* motiva Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "motiva Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F7A70B292E462200789EA9 /* motivaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = motivaApp.swift; sourceTree = "<group>"; };
@@ -100,6 +106,9 @@
 			isa = PBXGroup;
 			children = (
 				64C61014293D2B1E003005DE /* motiva-Watch-App-Info.plist */,
+				93C5D321293E36D80043A246 /* solnoite.png */,
+				93C5D31F293E36CB0043A246 /* solmanha.png */,
+				93C5D31D293E369E0043A246 /* soltarde.png */,
 				93F7A74A2930EAAE00789EA9 /* Modelos */,
 				93F7A73E292FA27C00789EA9 /* Componentes */,
 				93F7A745292FA5DD00789EA9 /* Views */,
@@ -236,8 +245,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93C5D322293E36D80043A246 /* solnoite.png in Resources */,
 				93F7A713292E462200789EA9 /* Preview Assets.xcassets in Resources */,
 				93F7A710292E462200789EA9 /* Assets.xcassets in Resources */,
+				93C5D320293E36CB0043A246 /* solmanha.png in Resources */,
+				93C5D31E293E369E0043A246 /* soltarde.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

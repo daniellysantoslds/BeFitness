@@ -15,6 +15,7 @@ struct AcompanhamentoView: View {
         ScrollView {
             ForEach (0..<daysHumors.count) { index in
                 HStack {
+                    Spacer(minLength: 5)
                     Text(daysHumors[index].date)
                     Spacer()
                     if daysHumors[index].mood.value == 0 {
@@ -40,7 +41,8 @@ struct AcompanhamentoView: View {
                             })
                     }
                 } .background(Color.clear.disabled(refresh))
-                .background(.gray)
+                    .background(.gray)
+                .cornerRadius(8)
             }
             //        }.onAppear(perform: {
             //            generateImageArray()

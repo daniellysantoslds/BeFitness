@@ -87,8 +87,10 @@ struct OnboardingView: View {
     func morningNotification() {
         UserDefaults.standard.set(0, forKey: "morningNotification")
         let contentMorning = UNMutableNotificationContent()
-        contentMorning.title = versiculos[UserDefaults.standard.integer(forKey: "morningNotification")].tituloVersiculo
-        contentMorning.subtitle = versiculos[UserDefaults.standard.integer(forKey: "morningNotification")].descricaoVersiculo
+//        contentMorning.title = versiculos[UserDefaults.standard.integer(forKey: "morningNotification")].tituloVersiculo
+//        contentMorning.subtitle = versiculos[UserDefaults.standard.integer(forKey: "morningNotification")].descricaoVersiculo
+        contentMorning.title = versiculos[0].tituloVersiculo
+        contentMorning.subtitle = versiculos[0].descricaoVersiculo
         //        contentMorning.title = versiculos[contentNumber].tituloVersiculo
         //        contentMorning.subtitle = versiculos[contentNumber].descricaoVersiculo
         contentMorning.sound = .default
@@ -111,30 +113,36 @@ struct OnboardingView: View {
     func afternoonNotification() {
         UserDefaults.standard.set(1, forKey: "afternoonNotification")
         let contentAfternoon = UNMutableNotificationContent()
-        contentAfternoon.title = versiculos[UserDefaults.standard.integer(forKey: "afternoonNotification")].tituloVersiculo
-        contentAfternoon.subtitle = versiculos[UserDefaults.standard.integer(forKey: "afternoonNotification")].descricaoVersiculo
+//        contentAfternoon.title = versiculos[UserDefaults.standard.integer(forKey: "afternoonNotification")].tituloVersiculo
+//        contentAfternoon.subtitle = versiculos[UserDefaults.standard.integer(forKey: "afternoonNotification")].descricaoVersiculo
+//
+        contentAfternoon.title = versiculos[1].tituloVersiculo
+        contentAfternoon.subtitle = versiculos[1].descricaoVersiculo
+        
         //        contentMorning.title = versiculos[contentNumber].tituloVersiculo
         //        contentMorning.subtitle = versiculos[contentNumber].descricaoVersiculo
         contentAfternoon.sound = .default
-        //        guard let imageURL = Bundle.main.url(forResource: "solmanha", withExtension: "png") else { return }
-        //        let attachment = try! UNNotificationAttachment(identifier: "solmanha", url: imageURL, options: .none)
-        //        contentMorning.attachments = [attachment]
+//                guard let imageURL = Bundle.main.url(forResource: "solmanha", withExtension: "png") else { return }
+//                let attachment = try! UNNotificationAttachment(identifier: "solmanha", url: imageURL, options: .none)
+//                contentAfternoon.attachments = [attachment]
         contentAfternoon.categoryIdentifier = "afternoonNotification"
         let afternoonCategory = UNNotificationCategory(identifier: "afternoonNotification", actions: [], intentIdentifiers: [], options: [])
         UNUserNotificationCenter.current().setNotificationCategories([afternoonCategory])
         var dateInfo = DateComponents()
-        dateInfo.hour = 15
-        dateInfo.minute = 00
-        let afternoonTrigger = UNCalendarNotificationTrigger(dateMatching: dateInfo, repeats: true)
-        //let morningTrigger = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: false)
+        dateInfo.hour = 11
+        dateInfo.minute = 28
+//        let afternoonTrigger = UNCalendarNotificationTrigger(dateMatching: dateInfo, repeats: true)
+        let afternoonTrigger = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: false)
         let requestAfternoon = UNNotificationRequest(identifier: "afternoonNotification", content: contentAfternoon, trigger: afternoonTrigger)
         UNUserNotificationCenter.current().add(requestAfternoon)
     }
     func nightNotification() {
         UserDefaults.standard.set(2, forKey: "nightNotification")
         let contentNight = UNMutableNotificationContent()
-        contentNight.title = versiculos[UserDefaults.standard.integer(forKey: "nightNotification")].tituloVersiculo
-        contentNight.subtitle = versiculos[UserDefaults.standard.integer(forKey: "nightNotification")].descricaoVersiculo
+//        contentNight.title = versiculos[UserDefaults.standard.integer(forKey: "nightNotification")].tituloVersiculo
+//        contentNight.subtitle = versiculos[UserDefaults.standard.integer(forKey: "nightNotification")].descricaoVersiculo
+        contentNight.title = versiculos[2].tituloVersiculo
+        contentNight.subtitle = versiculos[2].descricaoVersiculo
         //        contentMorning.title = versiculos[contentNumber].tituloVersiculo
         //        contentMorning.subtitle = versiculos[contentNumber].descricaoVersiculo
         contentNight.sound = .default
