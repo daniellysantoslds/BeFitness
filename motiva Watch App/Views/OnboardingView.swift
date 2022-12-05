@@ -31,14 +31,14 @@ struct OnboardingView: View {
                                 .imageScale(.large)
                                 .frame(width: 70, height:70)
                             
-                            Text("Nos conte sobre seu humor")
+                            Text("Nos conte sobre seu humor durante o dia").bold()
                         }
                         VStack {
                             Image("imagemnotificacao")
                             //.resizable()
                             //.imageScale(.small)
                                 .frame(width: 70, height:70)
-                            Text("Receba notificações motivacionais diariamente")
+                            Text("Receba notificações motivacionais diariamente").bold()
                             
                         }
                         VStack {

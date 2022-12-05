@@ -9,23 +9,28 @@ import SwiftUI
 
 struct ListaVersiculosView: View {
     var body: some View {
-        
-        List(versiculos) { versiculo in
-            NavigationLink(destination:
-                            DetalhesVersiculoView(versiculo: versiculo)) {
-                
-                VStack(spacing: 100) {
-                    Text("\(versiculo.tituloVersiculo)")                        .foregroundColor(versiculo.cortexto)
+            
+            List(versiculos) { versiculo in
+                NavigationLink(destination:
+                                DetalhesVersiculoView(versiculo: versiculo)) {
                     
-                }
+                    VStack(spacing: 100) {
+                        HStack {
+                            Image(versiculo.icone).resizable()
+                                .frame(width: 30, height: 30)
+                            Text("\(versiculo.tituloVersiculo)").bold()
+                        }
+                                             .foregroundColor(versiculo.cortexto)
+                        
+                    }
+                    
+                } .listRowBackground(versiculo.corBackground.cornerRadius(8))
                 
-            } .listRowBackground(versiculo.corBackground.cornerRadius(8))
-
+                
+            }
+            
             
         }
-        
-        
-    }
 }
 
 struct ListaVersiculosView_Previews: PreviewProvider {
