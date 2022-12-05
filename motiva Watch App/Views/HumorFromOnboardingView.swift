@@ -1,16 +1,16 @@
 //
-//  HumorView.swift
+//  HumorFromOnboardingView.swift
 //  motiva Watch App
 //
-//  Created by Danielly Santos Lopes da Silva on 28/11/22.
+//  Created by Jpsmor on 05/12/22.
 //
 
 import SwiftUI
 
-struct HumorView: View {
+struct HumorFromOnboardingView: View {
     
     var body: some View {
-        NavigationView {
+        
             VStack(spacing: 20){
                     Text("Como esta se sentindo?")
 
@@ -49,11 +49,7 @@ struct HumorView: View {
             
             
             
-        }
-//        .onAppear(perform: {
-//            UserDefaults.standard.set(UserDefaults.standard.integer(forKey: "InitialDate") - 432000, forKey: "InitialDate")
-//        }
-//        )
+        
     }
     
     func generateDaysData() {
@@ -69,12 +65,8 @@ struct HumorView: View {
     }
 }
 
-
-
-
-struct HumorView_Previews: PreviewProvider {
+struct HumorFromOnboardingView_Previews: PreviewProvider {
     static var previews: some View {
-        HumorView()
+        HumorFromOnboardingView()
     }
 }
-

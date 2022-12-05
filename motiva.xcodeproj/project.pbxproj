@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		64BAF23F292FB21100775595 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BAF23E292FB21100775595 /* OnboardingView.swift */; };
+		64C61016293D453D003005DE /* AcompanhamentoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C61015293D453D003005DE /* AcompanhamentoView.swift */; };
+		64C61018293D92C9003005DE /* DaysAndMoods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C61017293D92C9003005DE /* DaysAndMoods.swift */; };
+		64C6101A293DC485003005DE /* HumorFromOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C61019293DC485003005DE /* HumorFromOnboardingView.swift */; };
 		9305AC322936DBA700A1647F /* HumorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9305AC312936DBA700A1647F /* HumorView.swift */; };
 		938507C72939302200968FA2 /* TESTE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938507C62939302200968FA2 /* TESTE.swift */; };
 		93C4D36029359CDD00268B94 /* ListaVersiculosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C4D35F29359CDD00268B94 /* ListaVersiculosView.swift */; };
@@ -47,6 +50,10 @@
 
 /* Begin PBXFileReference section */
 		64BAF23E292FB21100775595 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		64C61014293D2B1E003005DE /* motiva-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "motiva-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		64C61015293D453D003005DE /* AcompanhamentoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcompanhamentoView.swift; sourceTree = "<group>"; };
+		64C61017293D92C9003005DE /* DaysAndMoods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysAndMoods.swift; sourceTree = "<group>"; };
+		64C61019293DC485003005DE /* HumorFromOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumorFromOnboardingView.swift; sourceTree = "<group>"; };
 		9305AC312936DBA700A1647F /* HumorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HumorView.swift; sourceTree = "<group>"; };
 		938507C62939302200968FA2 /* TESTE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TESTE.swift; sourceTree = "<group>"; };
 		93C4D35F29359CDD00268B94 /* ListaVersiculosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaVersiculosView.swift; sourceTree = "<group>"; };
@@ -92,6 +99,7 @@
 		93F7A70A292E462200789EA9 /* motiva Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				64C61014293D2B1E003005DE /* motiva-Watch-App-Info.plist */,
 				93F7A74A2930EAAE00789EA9 /* Modelos */,
 				93F7A73E292FA27C00789EA9 /* Componentes */,
 				93F7A745292FA5DD00789EA9 /* Views */,
@@ -123,8 +131,10 @@
 			isa = PBXGroup;
 			children = (
 				9305AC312936DBA700A1647F /* HumorView.swift */,
+				64C61019293DC485003005DE /* HumorFromOnboardingView.swift */,
 				64BAF23E292FB21100775595 /* OnboardingView.swift */,
 				93F7A746292FA65C00789EA9 /* MenuPrincipalView.swift */,
+				64C61015293D453D003005DE /* AcompanhamentoView.swift */,
 				93F7A7512931071700789EA9 /* DetalhesVersiculosView.swift */,
 				93C4D35F29359CDD00268B94 /* ListaVersiculosView.swift */,
 				938507C62939302200968FA2 /* TESTE.swift */,
@@ -135,6 +145,7 @@
 		93F7A74A2930EAAE00789EA9 /* Modelos */ = {
 			isa = PBXGroup;
 			children = (
+				64C61017293D92C9003005DE /* DaysAndMoods.swift */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";
@@ -238,12 +249,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				93F7A747292FA65C00789EA9 /* MenuPrincipalView.swift in Sources */,
+				64C61018293D92C9003005DE /* DaysAndMoods.swift in Sources */,
 				93F7A7522931071700789EA9 /* DetalhesVersiculosView.swift in Sources */,
 				93F7A70E292E462200789EA9 /* ContentView.swift in Sources */,
 				93F7A70C292E462200789EA9 /* motivaApp.swift in Sources */,
+				64C6101A293DC485003005DE /* HumorFromOnboardingView.swift in Sources */,
 				64BAF23F292FB21100775595 /* OnboardingView.swift in Sources */,
 				938507C72939302200968FA2 /* TESTE.swift in Sources */,
 				9305AC322936DBA700A1647F /* HumorView.swift in Sources */,
+				64C61016293D453D003005DE /* AcompanhamentoView.swift in Sources */,
 				93F7A742292FA3F900789EA9 /* BotaoPrincipalComponenteView.swift in Sources */,
 				93C4D36029359CDD00268B94 /* ListaVersiculosView.swift in Sources */,
 			);
@@ -380,6 +394,7 @@
 				DEVELOPMENT_TEAM = 2WUBK8ZL5T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "motiva-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = motiva;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
@@ -410,6 +425,7 @@
 				DEVELOPMENT_TEAM = 2WUBK8ZL5T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "motiva-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = motiva;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
@@ -436,7 +452,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2WUBK8ZL5T;
+				DEVELOPMENT_TEAM = QJZZNXUZ63;
 				INFOPLIST_KEY_CFBundleDisplayName = motiva;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.academy.motiva;
@@ -452,7 +468,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2WUBK8ZL5T;
+				DEVELOPMENT_TEAM = QJZZNXUZ63;
 				INFOPLIST_KEY_CFBundleDisplayName = motiva;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.academy.motiva;

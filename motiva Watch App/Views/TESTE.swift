@@ -9,13 +9,11 @@ import SwiftUI
 
 struct TESTE: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
         
-        
-        
-        List {
-            Text("OIIIX")
-        }
+            NavigationLink (destination: ContentView())
+            {
+                Text("teste")
+            }
     }
 }
 
