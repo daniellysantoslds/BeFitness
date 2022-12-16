@@ -13,36 +13,40 @@ struct AcompanhamentoView: View {
     
     var body: some View {
         ScrollView {
-            ForEach (0..<daysHumors.count) { index in
-                HStack {
-                    Spacer(minLength: 5)
-                    Text(daysHumors[index].date)
-                    Spacer()
-                    if daysHumors[index].mood.value == 0 {
-                        Image("imagemnormal")
-                            .onTapGesture(perform: {
-                                daysHumors[index].mood.value = 1
-                                UserDefaults.standard.set(1, forKey: "\(daysHumors[index].date)")
-                                refresh.toggle()
-                            })
-                    } else if daysHumors[index].mood.value == 1 {
-                        Image("imagemfeliz")
-                            .onTapGesture(perform: {
-                                daysHumors[index].mood.value = 2
-                                UserDefaults.standard.set(2, forKey: "\(daysHumors[index].date)")
-                                refresh.toggle()
-                            })
-                    } else if daysHumors[index].mood.value == 2 {
-                        Image("imagemtriste")
-                            .onTapGesture(perform: {
-                                daysHumors[index].mood.value = 0
-                                UserDefaults.standard.set(0, forKey: "\(daysHumors[index].date)")
-                                refresh.toggle()
-                            })
+            ForEach(0..<daysHumors.count) { index in
+                
+                    HStack {
+                        Spacer(minLength: 5)
+                        Text(daysHumors[index].date)
+                        Spacer()
+                        if daysHumors[index].mood.value == 0 {
+                            Image("imagemnormal")
+                                .onTapGesture(perform: {
+                                    daysHumors[index].mood.value = 1
+                                    UserDefaults.standard.set(1, forKey: "\(daysHumors[index].date)")
+                                    refresh.toggle()
+                                })
+                        } else if daysHumors[index].mood.value == 1 {
+                            Image("imagemfeliz")
+                                .onTapGesture(perform: {
+                                    daysHumors[index].mood.value = 2
+                                    UserDefaults.standard.set(2, forKey: "\(daysHumors[index].date)")
+                                    refresh.toggle()
+                                })
+                        } else if daysHumors[index].mood.value == 2 {
+                            Image("imagemtriste")
+                                .onTapGesture(perform: {
+                                    daysHumors[index].mood.value = 0
+                                    UserDefaults.standard.set(0, forKey: "\(daysHumors[index].date)")
+                                    refresh.toggle()
+                                })
+                        }
                     }
-                } .background(Color.clear.disabled(refresh))
-                    .background(.gray)
-                .cornerRadius(8)
+                    .background(Color.clear.disabled(refresh))
+                        .background(Color("teste"))
+                    .cornerRadius(8)
+                
+               
             }
             //        }.onAppear(perform: {
             //            generateImageArray()

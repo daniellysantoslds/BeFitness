@@ -84,6 +84,8 @@ struct OnboardingView: View {
             }
         }
     }
+    
+    
     func morningNotification() {
         UserDefaults.standard.set(0, forKey: "morningNotification")
         let contentMorning = UNMutableNotificationContent()
@@ -110,6 +112,8 @@ struct OnboardingView: View {
         
         
     }
+    
+    
     func afternoonNotification() {
         UserDefaults.standard.set(1, forKey: "afternoonNotification")
         let contentAfternoon = UNMutableNotificationContent()
@@ -136,6 +140,8 @@ struct OnboardingView: View {
         let requestAfternoon = UNNotificationRequest(identifier: "afternoonNotification", content: contentAfternoon, trigger: afternoonTrigger)
         UNUserNotificationCenter.current().add(requestAfternoon)
     }
+    
+    
     func nightNotification() {
         UserDefaults.standard.set(2, forKey: "nightNotification")
         let contentNight = UNMutableNotificationContent()
