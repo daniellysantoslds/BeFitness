@@ -10,15 +10,29 @@ import SwiftUI
 struct MenuPrincipalView: View {
     var body: some View {
         //Text("aqui é a tela de menu principal")
-            VStack {
+        VStack(spacing: 12) {
                 NavigationLink (destination: ListaVersiculosView()){
                     
-                    Text("Versiculos")
+                    HStack(spacing: 8) {
+                       
+                        Image(systemName: "book.circle").foregroundColor(Color.pink)
+                            .font(.system(size: 24))
+                        Text("Versiculos")
+                           
+                    }
                     
+              
                 }
+                
                 NavigationLink (destination: AcompanhamentoView()){
                     
-                    Text("Acompanhamento")
+                    HStack(spacing: 8) {
+                        Image(systemName: "person.badge.clock").foregroundColor(Color.pink)
+                            .font(.system(size: 24))
+                        Text("Acompanhamento")
+                    }
+                   
+                   
                     
                 }
             }

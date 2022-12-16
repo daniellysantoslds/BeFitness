@@ -47,6 +47,7 @@ struct ListItem: Identifiable {
     var cortexto: Color
     var corBackground: Color
     var icone: String
+    
 }
 
 var versiculos = [
