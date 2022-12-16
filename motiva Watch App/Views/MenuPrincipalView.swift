@@ -15,7 +15,7 @@ struct MenuPrincipalView: View {
                     
                     HStack(spacing: 8) {
                        
-                        Image(systemName: "book.circle").foregroundColor(Color.pink)
+                        Image(systemName: "book.circle").foregroundColor(Color("Amarelo -0"))
                             .font(.system(size: 24))
                         Text("Versiculos")
                            
@@ -27,7 +27,8 @@ struct MenuPrincipalView: View {
                 NavigationLink (destination: AcompanhamentoView()){
                     
                     HStack(spacing: 8) {
-                        Image(systemName: "person.badge.clock").foregroundColor(Color.pink)
+                        
+                        Image(systemName: "person.badge.clock").foregroundColor(Color("Azul + 1"))
                             .font(.system(size: 24))
                         Text("Acompanhamento")
                     }
