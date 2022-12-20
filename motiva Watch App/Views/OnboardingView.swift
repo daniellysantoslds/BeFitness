@@ -91,8 +91,16 @@ struct OnboardingView: View {
         let contentMorning = UNMutableNotificationContent()
 //        contentMorning.title = versiculos[UserDefaults.standard.integer(forKey: "morningNotification")].tituloVersiculo
 //        contentMorning.subtitle = versiculos[UserDefaults.standard.integer(forKey: "morningNotification")].descricaoVersiculo
-        contentMorning.title = versiculos[0].tituloVersiculo
-        contentMorning.subtitle = versiculos[0].descricaoVersiculo
+    
+        
+        let randonListMorning = Int.random(in: 0...11)
+        
+        contentMorning.title = morning[randonListMorning].titulo
+        contentMorning.subtitle = morning[randonListMorning].descricao
+        
+        
+       //contentMorning.title = versiculos[0].tituloVersiculo
+        //contentMorning.subtitle = versiculos[0].descricaoVersiculo
         //        contentMorning.title = versiculos[contentNumber].tituloVersiculo
         //        contentMorning.subtitle = versiculos[contentNumber].descricaoVersiculo
         contentMorning.sound = .default
@@ -105,8 +113,8 @@ struct OnboardingView: View {
         var dateInfo = DateComponents()
         dateInfo.hour = 08
         dateInfo.minute = 30
-        let morningTrigger = UNCalendarNotificationTrigger(dateMatching: dateInfo, repeats: true)
-        //        let morningTrigger = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: false)
+        //let morningTrigger = UNCalendarNotificationTrigger(dateMatching: dateInfo, repeats: true)
+            let morningTrigger = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: true )
         let requestMorning = UNNotificationRequest(identifier: "morningNotification", content: contentMorning, trigger: morningTrigger)
         UNUserNotificationCenter.current().add(requestMorning)
         
@@ -119,9 +127,11 @@ struct OnboardingView: View {
         let contentAfternoon = UNMutableNotificationContent()
 //        contentAfternoon.title = versiculos[UserDefaults.standard.integer(forKey: "afternoonNotification")].tituloVersiculo
 //        contentAfternoon.subtitle = versiculos[UserDefaults.standard.integer(forKey: "afternoonNotification")].descricaoVersiculo
-//
-        contentAfternoon.title = versiculos[1].tituloVersiculo
-        contentAfternoon.subtitle = versiculos[1].descricaoVersiculo
+        
+        let randonListAfternoon = Int.random(in: 0...8)
+        
+        contentAfternoon.title = afternoon[randonListAfternoon].titulo
+        contentAfternoon.subtitle = afternoon[randonListAfternoon].descricao
         
         //        contentMorning.title = versiculos[contentNumber].tituloVersiculo
         //        contentMorning.subtitle = versiculos[contentNumber].descricaoVersiculo
@@ -147,8 +157,13 @@ struct OnboardingView: View {
         let contentNight = UNMutableNotificationContent()
 //        contentNight.title = versiculos[UserDefaults.standard.integer(forKey: "nightNotification")].tituloVersiculo
 //        contentNight.subtitle = versiculos[UserDefaults.standard.integer(forKey: "nightNotification")].descricaoVersiculo
-        contentNight.title = versiculos[2].tituloVersiculo
-        contentNight.subtitle = versiculos[2].descricaoVersiculo
+        
+        
+        
+        let randonListNight = Int.random(in: 0...9)
+        
+        contentNight.title = night[randonListNight].titulo
+        contentNight.subtitle = night[randonListNight].descricao
         //        contentMorning.title = versiculos[contentNumber].tituloVersiculo
         //        contentMorning.subtitle = versiculos[contentNumber].descricaoVersiculo
         contentNight.sound = .default

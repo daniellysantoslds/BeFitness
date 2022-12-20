@@ -19,19 +19,6 @@ struct Notifications_Previews: PreviewProvider {
     }
 }
 
-//
-//struct ListMorningg: Identifiable {
-//    var id = UUID()
-//    var titulo: String
-//    var descricao: String
-//
-//}
-//
-//var morningg = [
-//    ListMorningg(titulo: "oi", descricao: "oiii")
-//
-//]
-
 
 struct ListMorning: Identifiable {
     var id = UUID()
@@ -80,17 +67,7 @@ var morning = [
     ListMorning(titulo: "Vai com calma",
                 descricao: "Bom dia abençoade, sabe a única coisa que é boa em excesso? - rsrs parei que tá cedo - , nada de exagerar no treino por que ninguém quer tomar soro. #informativo #motivador #befitness"),
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+  
 ]
 
 
@@ -135,8 +112,6 @@ var afternoon = [
 ]
 
 
-
-//
 struct ListNight: Identifiable {
     var id = UUID()
     var titulo: String
@@ -173,7 +148,6 @@ var night = [
     
     ListNight(titulo: "Facilite, alecrim",
               descricao: "A redução do estresse é também um dos principais benefícios psicológicos da atividade física, facilite a vida de quem convive com você, alecrim dourado. #informativo #motivador #befitness"),
-    
     
     
     ListNight(titulo: "Pé na rotina",
