@@ -13,7 +13,7 @@
 		64C6101A293DC485003005DE /* HumorFromOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C61019293DC485003005DE /* HumorFromOnboardingView.swift */; };
 		9305AC322936DBA700A1647F /* HumorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9305AC312936DBA700A1647F /* HumorView.swift */; };
 		938507C72939302200968FA2 /* TESTE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938507C62939302200968FA2 /* TESTE.swift */; };
-		93BFCBAD2950D4F500A0D476 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BFCBAC2950D4F500A0D476 /* Notifications.swift */; };
+		93BFCBAD2950D4F500A0D476 /* ListsNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BFCBAC2950D4F500A0D476 /* ListsNotifications.swift */; };
 		93C4D36029359CDD00268B94 /* ListaVersiculosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C4D35F29359CDD00268B94 /* ListaVersiculosView.swift */; };
 		93C5D31E293E369E0043A246 /* soltarde.png in Resources */ = {isa = PBXBuildFile; fileRef = 93C5D31D293E369E0043A246 /* soltarde.png */; };
 		93C5D320293E36CB0043A246 /* solmanha.png in Resources */ = {isa = PBXBuildFile; fileRef = 93C5D31F293E36CB0043A246 /* solmanha.png */; };
@@ -60,7 +60,7 @@
 		64C61019293DC485003005DE /* HumorFromOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumorFromOnboardingView.swift; sourceTree = "<group>"; };
 		9305AC312936DBA700A1647F /* HumorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HumorView.swift; sourceTree = "<group>"; };
 		938507C62939302200968FA2 /* TESTE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TESTE.swift; sourceTree = "<group>"; };
-		93BFCBAC2950D4F500A0D476 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		93BFCBAC2950D4F500A0D476 /* ListsNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsNotifications.swift; sourceTree = "<group>"; };
 		93C4D35F29359CDD00268B94 /* ListaVersiculosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaVersiculosView.swift; sourceTree = "<group>"; };
 		93C5D31D293E369E0043A246 /* soltarde.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = soltarde.png; path = Assets.xcassets/soltarde.imageset/soltarde.png; sourceTree = "<group>"; };
 		93C5D31F293E36CB0043A246 /* solmanha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = solmanha.png; path = Assets.xcassets/solmanha.imageset/solmanha.png; sourceTree = "<group>"; };
@@ -157,7 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				64C61017293D92C9003005DE /* DaysAndMoods.swift */,
-				93BFCBAC2950D4F500A0D476 /* Notifications.swift */,
+				93BFCBAC2950D4F500A0D476 /* ListsNotifications.swift */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";
@@ -271,7 +271,7 @@
 				64C6101A293DC485003005DE /* HumorFromOnboardingView.swift in Sources */,
 				64BAF23F292FB21100775595 /* OnboardingView.swift in Sources */,
 				938507C72939302200968FA2 /* TESTE.swift in Sources */,
-				93BFCBAD2950D4F500A0D476 /* Notifications.swift in Sources */,
+				93BFCBAD2950D4F500A0D476 /* ListsNotifications.swift in Sources */,
 				9305AC322936DBA700A1647F /* HumorView.swift in Sources */,
 				64C61016293D453D003005DE /* AcompanhamentoView.swift in Sources */,
 				93F7A742292FA3F900789EA9 /* BotaoPrincipalComponenteView.swift in Sources */,
