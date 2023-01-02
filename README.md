@@ -22,4 +22,4 @@ Organizacão de trabalho no <a href="https://cat-flamingo-832.notion.site/Alfabe
 
 Artigo sobre o projeto no  <a href="https://medium.com/@danielly.santoslopesds/alfabeta-auxiliando-no-processo-de-alfabetiza%C3%A7%C3%A3o-c50900d7e257" target="_blank" rel="external">Medium</a>
 
-Video promocional <a href="https://www.youtube.com/watch?v=duHQ5iYCJ74" target="_blank" rel="external">Youtube</a>
+Video promocional no <a href="https://www.youtube.com/watch?v=duHQ5iYCJ74" target="_blank" rel="external">Youtube</a>
