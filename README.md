@@ -17,7 +17,7 @@ O desenvolvimento foi feito para WatchOS e toda a implementação foi feita em S
 
 <h2>Links</h2>
 
-Organizacão de trabalho no <a href="[https://cat-flamingo-832.notion.site/Alfabeta-b3361173a82d4c6c84aaffb77139cf02](https://cat-flamingo-832.notion.site/BeFitness-d43e1888cb6941368fe748dcd976f93c)" target="_blank" rel="external" >Notion</a>
+Organizacão de trabalho no <a href="[https://cat-flamingo-832.notion.site/Alfabeta-b3361173a82d4c6c84aaffb77139cf02](https://cat-flamingo-832.notion.site/BeFitness-d43e1888cb6941368fe748dcd976f93c)" target="_blank" rel="external">Notion</a>
 
 Artigo sobre o projeto no  <a href="https://medium.com/@danielly.santoslopesds/alfabeta-auxiliando-no-processo-de-alfabetiza%C3%A7%C3%A3o-c50900d7e257" target="_blank" rel="external">Medium</a>
 
