@@ -6,7 +6,7 @@ Neste app, o usuário receberá versículos motivacionais a partir de notificaç
 
 <h2>Tecnologias</h2>
 
-O desenvolvimento foi feito para WatchOS, e toda a implementação foi feita em SwiftUI. Implementando listas,navegacão, arrays, imagens e notificação padrão.
+O desenvolvimento foi feito para WatchOS e toda a implementação foi feita em SwiftUI. Implementando listas,navegacão, arrays, imagens e notificação padrão(nativa).
 
 <h2>Visualização</h2>
 
