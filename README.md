@@ -14,7 +14,7 @@ A barra de progresso das atividades e o AutoLayout ainda estão sendo trabalhado
 <h2>Visualização</h2>
 
 
-<img src="https://user-images.githubusercontent.com/102704880/180437033-cc924456-0c59-488b-9334-bc2e0a1583f4.gif" />
+<img src="https://user-images.githubusercontent.com/102704880/210253559-04345046-131c-4fc0-81d4-4f9d820ede3e.mp4"/>
 
 
 
