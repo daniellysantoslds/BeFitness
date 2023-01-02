@@ -17,7 +17,6 @@ O desenvolvimento foi feito para WatchOS e toda a implementação foi feita em S
 
 <h2>Links</h2>
 
-Artigo sobre o projeto no  <a href="[[https://cat-flamingo-832.notion.site/Alfabeta-b3361173a82d4c6c84aaffb77139cf02](https://cat-flamingo-832.notion.site/BeFitness-d43e1888cb6941368fe748dcd976f93c)](https://www.notion.so/BeFitness-d43e1888cb6941368fe748dcd976f93c)" target="_blank" rel="external">Notion</a>
 
 Artigo sobre o projeto no  <a href="https://cat-flamingo-832.notion.site/BeFitness-d43e1888cb6941368fe748dcd976f93c" target="_blank" rel="external">Notion</a>
 
