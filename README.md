@@ -2,8 +2,7 @@
 Uma solução para Apple Watch construida em um challenge de três semanas
 
 <h2>Descrição</h2>
-Este aplicativo é como um joguinho de aprendizagem infantil com foco no processo de alfabetização de crianças. Fazendo o uso de sons, imagens e cores nas atividades propostas. 
-
+Neste app, o usuário receberá versículos motivacionais a partir de notificações pela manhã, tarde e noite e também terá acompanhamento mensal sobre seu humor. BeFitness uma dose de motivação no seu dia
 
 <h2>Tecnologias</h2>
 
